@@ -1,0 +1,416 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700,400|Raleway:100);
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body { height: 100% }
+body {
+	background: url(img/faux-column.png) repeat-y -20px 0;
+	color: #555;
+	font: 14px/20px "Trebuchet MS", Helvetica, sans-serif;
+	min-width: 990px;
+}
+hr, legend, .hide { display: none }
+img, abbr, fieldset { border: 0 none }
+li { list-style: none }
+a {
+	color: #006369;
+	font-weight: bold;
+	outline: none;
+	text-decoration: none;
+
+	-webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+		 -o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+}
+
+::selection {
+	background: #00a1a1;
+	color: #fff;
+}
+::-moz-selection {
+	background: #00a1a1;
+	color: #fff;
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after { clear: both }
+.cf { *zoom: 1 }
+
+
+
+#head {
+	background: #efeeef;
+	/*border-left: 20px solid #fff;*/
+	float: left;
+	margin-bottom: -40px;
+	min-height: 100%;
+	width: 250px;
+}
+#body {
+	background: #fff url(img/shadow-ver.png) no-repeat left -113px;
+	/*border-right: 20px solid #fff;*/
+	margin: 0 0 -40px 250px;
+	min-height: 100%;
+	position: relative;
+}
+#foot {
+	background: #00a1a1;
+	color: #fff;
+	clear: both;
+	font-size: 13px;
+	line-height: 30px;
+	padding: 5px 0;
+	position: relative;
+	text-align: center;
+}
+
+
+
+#logo {
+	background: #00a1a1;
+	/*border-top: 20px solid #fff;*/
+	height: 181px;
+	padding-top: 32px;
+}
+.logo {
+	display: block;
+	margin: 0 auto;
+}
+#nav {
+	background: url(img/shadow-hor.png) no-repeat center top;
+	padding: 45px 0 85px 30px;
+}
+.menu-item {
+	clear: left;
+	float: left;
+	font-size: 15px;
+	line-height: 34px;
+	text-transform: uppercase;
+}
+.menu-item a { color: #929292 }
+.menu-item a:hover,
+.menu-item a:focus,
+.menu-item a:active { color: #00a1a1 }
+.sub-menu {
+	display: none;
+	margin: 0 0 13px 13px;
+}
+.sub-menu .menu-item {
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: none;
+}
+.menu-item:hover .sub-menu { display: block }
+
+
+
+.home #body {
+	background-image: url(img/shadow-ver.png), url(img/office.jpg);
+	background-position: left center, left center;
+	background-size: auto, cover;
+}
+.feature-item {
+	display: block;
+	height: 244px;
+	left: 50%;
+	margin-top: -132px;
+	position: absolute;
+	top: 50%;
+	width: 244px;
+	z-index: 1;
+}
+.feature-item:hover { z-index: 10 }
+.feature-item a {
+	background: #666;
+	background: rgba(102,102,102,.5);
+	color: #fff;
+	display: block;
+	font: 100 35px/244px 'Raleway', sans-serif;
+	height: 100%;
+	text-align: center;
+	width: 100%;
+
+	-webkit-border-radius: 50%;
+			border-radius: 50%;
+	background-clip: padding-box;
+}
+.feature-item a:hover,
+.feature-item a:focus,
+.feature-item a:active { background: #00a1a1 }
+.feature-item strong {
+	display: block;
+	font-size: 30px;
+	line-height: normal;
+	left: 0;
+	margin-top: 13px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+}
+.feature-item-1 { margin-left: -354px }
+.feature-item-2 { margin-left: -122px }
+.feature-item-3 { margin-left: 110px }
+
+
+
+.adr {
+	display: inline;
+	font-style: normal;
+}
+#foot a { color: #fff }
+#foot a:hover,
+#foot a:focus,
+#foot a:active { border-bottom: 1px dotted #fff }
+
+
+
+.page-header {
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*border-top: 20px solid #fff;*/
+	height: 213px;
+}
+.page-informacoes-gerais .page-header { background-image: url(img/header-informacoes-gerais.jpg) }
+.page-como-chegar .page-header { background-image: url(img/header-como-chegar.jpg) }
+.page-dra-gisele-torok .page-header,
+.page-equipe .page-header { background-image: url(img/header-equipe.jpg) }
+.page-tratamentos .page-header { background-image: url(img/header-tratamentos.jpg) }
+.page-equipamentos .page-header { background-image: url(img/header-equipamentos.jpg) }
+.page-clipping .page-header { background-image: url(img/header-clipping.jpg) }
+.page-contato .page-header { background-image: url(img/header-contato.jpg) }
+
+.entry-title,
+.parent-title {
+	background: url(img/shadow-hor-wide.png) no-repeat left top;
+	color: #898989;
+	font: 100 62px 'Raleway', sans-serif;
+	padding: 40px 70px;
+}
+.hgroup .parent-title {
+	margin-bottom: -5px;
+	padding-bottom: 0;
+}
+.hgroup .entry-title {
+	background: none;
+	font-size: 32px;
+	padding-top: 0;
+}
+.entry-content { padding-bottom: 60px }
+.entry-content a:hover,
+.entry-content a:focus,
+.entry-content a:active { border-bottom: 1px dotted #006369 }
+.entry-content p,
+.entry-content ul,
+.entry-content ol { margin: 0 70px 20px }
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6
+.default-title,
+.marker-title,
+.entry-content .default-title,
+.entry-content .market-title {
+	color: #898989;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0 70px 20px;
+}
+.entry-content h2 {
+	font-size: 31px;
+	font-weight: 300;
+	line-height: 1em;
+}
+
+.marker-title {
+	background: url(img/marker.png) no-repeat 0 2px;
+	padding-left: 16px;
+}
+.alignleft {
+	float: left;
+	margin: 0 30px 20px 0;
+}
+.column-left {
+	float: left;
+	width: 390px;
+}
+.column-right { margin-left: 444px }
+.column-right p,
+.column-right ul,
+.column-right ol,
+.column-right h2,
+.column-right h3,
+.column-right h4,
+.column-right h5,
+.column-right h6 { margin-left: 0 }
+
+/* Equipe */
+
+.box {
+	background: #cae0e7 url(img/shadow-ver.png) no-repeat left -266px;
+	color: #646464;
+	overflow: hidden;
+	margin-bottom: 65px;
+	padding: 30px 0 25px;
+}
+.box p {
+	font-size: 20px;
+	font-style: italic;
+	line-height: normal;
+}
+.tag-list { max-width: 600px }
+.tag-item {
+	background: #006369 url(img/tag.png) no-repeat right center;
+	color: #fff;
+	cursor: default;
+	float: left;
+	font: 100 26px/40px 'Raleway', sans-serif;
+	margin: 10px 40px 15px 0;
+	padding: 0 22px 0 8px;
+	position: relative;
+
+	-webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+		 -o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+}
+.tag-item span {
+	background: url(img/shadow-ver-small.png) repeat-y;
+	display: block;
+	height: 50px;
+	left: 0;
+	position: absolute;
+	top: -5px;
+	width: 3px;
+}
+.tag-item:hover {
+	padding-right: 37px;
+	margin-right: 25px;
+}
+.entry-content .team-list,
+.entry-content .clip-list {
+	margin-right: 0;
+	overflow: hidden;
+}
+.team-item,
+.clip-item {
+	color: #fff;
+	float: left;
+	height: 225px;
+	margin: 0 60px 55px 0;
+	position: relative;
+	width: 244px;
+}
+.team-image,
+.clip-image {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+.wrapper {
+	background: #00a1a1;
+	background: rgba(0,161,161,.8);
+	cursor: default;
+	display: table;
+	height: 100%;
+	opacity: 0;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+
+	-webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+		 -o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+}
+.team-item:hover .wrapper,
+.clip-item:hover .wrapper { opacity: 1 }
+.cell {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 20px;
+}
+.team-name,
+.clip-name { font: 100 30px/25px 'Raleway', sans-serif }
+.team-role,
+.team-crm,
+.clip-date {
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+/* Tratamentos */
+
+.toggle-head,
+.entry-content .toggle-head {
+	background: url(img/marker-on.png) no-repeat 0 5px;
+	color: #006369;
+	font-size: 15px;
+	line-height: normal;
+	padding-left: 22px;
+}
+.toggle-off,
+.entry-content .toggle-off { background: url(img/marker.png) no-repeat 2px 3px }
+.toggle-body {
+	overflow: hidden;
+	padding-left: 22px;
+}
+
+/* Clipping */
+
+.clip-item {
+	height: 225px;
+	margin: 0 55px 45px 0;
+	width: 230px;
+}
+
+/* Contato */
+
+.page-contato .entry-content {
+	background: url(img/image-contato.jpg) no-repeat 434px bottom;
+	margin-top: -80px;
+	min-height: 489px;
+}
+.page-contato .entry-content form { padding-top: 80px }
+label { text-transform: lowercase }
+.text,
+.area {
+	background: #d5d5d5;
+	border: 0 none;
+	display: block;
+	font: 14px/20px sans-serif;
+	margin-top: 4px;
+	padding: 7px;
+	width: 295px;
+
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+.button {
+	background: #006369;
+	color: #fff;
+	cursor: pointer;
+	border: 0 none;
+	font: 100 16px/26px 'Raleway', sans-serif;
+	padding: 0 8px;
+	text-transform: lowercase;
+}

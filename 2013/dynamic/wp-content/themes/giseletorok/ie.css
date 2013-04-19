@@ -1,0 +1,19 @@
+.home #body {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/office.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/office.jpg',sizingMethod='scale')";
+}
+
+.feature-item a { background: url(img/ie/circle.png) no-repeat }
+.feature-item a:hover,
+.feature-item a:focus,
+.feature-item a:active { background: url(img/ie/circle.png) no-repeat right 0 }
+
+.wrapper {
+	visibility: hidden;
+	zoom: 1;
+}
+.team-item:hover .wrapper,
+.clip-item:hover .wrapper {
+	visibility: visible;
+	zoom: 1;
+}

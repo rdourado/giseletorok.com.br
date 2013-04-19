@@ -1,0 +1,9 @@
+$('.sub-menu,.toggle-body').hide();
+$('.menu-item').hover(function(){
+	$(this).find('.sub-menu').stop(true).slideDown('fast');
+},function(){
+	$(this).find('.sub-menu').show().stop(true).slideUp('fast');
+});
+$('.toggle-head').addClass('toggle-off').css('cursor','pointer').click(function(){
+	$(this).toggleClass('toggle-off').next().stop(true).slideToggle();
+});
